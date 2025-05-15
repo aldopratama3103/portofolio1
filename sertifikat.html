@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sertifikat</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background-color: #111827;
+      color: white;
+    }
+
+    header, footer {
+      background-color: #1f2937;
+      color: white;
+      padding: 1em 2em;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.5em;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .container {
+      padding: 2em;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #ff3c3c;
+      margin-bottom: 1.5em;
+    }
+
+    .certificates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+
+    .card {
+      background-color: #1e293b;
+      border-left: 4px solid #ff3c3c;
+      border-radius: 12px;
+      padding: 1.5em;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1em;
+    }
+
+    .card p {
+      font-weight: bold;
+      color: white;
+      margin: 0;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .certificates {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .certificates {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">Portofolio Saya</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kemampuan.html">Kemampuan</a></li>
+          <li><a href="pengalaman.html">Pengalaman</a></li>
+          <li><a href="sertifikat.html">Sertifikat</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2><strong>Sertifikat</strong></h2>
+      <div class="certificates">
+       <div class="card">
+          <a href="https://drive.google.com/file/d/1Vk8yQvOi590NsrLKTtLQ0u6xMN4Njw5v/view?usp=sharing" target="_blank">
+            <img src="images/sertifikat_page-0001.jpg" alt="Sertifikat 1" />
+            <p>JavaScript</p>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="https://drive.google.com/file/d/16YhakNwxWGQarlGWwsszbJc9SCnhZe8D/view?usp=drive_link" target="_blank">
+          <img src="images/rh.jpg" alt="Sertifikat 2" />
+          <p>Red Hat Training</p>
+           </a>
+        </div>
+        <div class="card">
+          <a href="https://drive.google.com/file/d/1S2QEuFXdLUejfJrpBrtQLc8JPFh-x0ei/view?usp=drive_link" target="_blank">
+          <img src="images/Fortinet 1.0.png" alt="Sertifikat 3" />
+          <p>Cybersecurity 1.0 Self-Paced</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://drive.google.com/file/d/14_71JapUeZL33cC-bryVbWlW7bOYOGeL/view?usp=drive_link" target="_blank">
+          <img src="images/Fortinet 2.0.png" alt="Sertifikat 4" />
+          <p>Cybersecurity 2.0 Self-Paced</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Portofolio Saya</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pengalaman</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background-color: #111827;
+      color: white;
+    }
+
+    header, footer {
+      background-color: #1f2937;
+      color: white;
+      padding: 1em 2em;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: auto;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.5em;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links li a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 2rem;
+      flex: 1;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      color: #ef4444;
+    }
+
+    .experience-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .experience-card {
+      background: #1f2937;
+      padding: 1.5rem;
+      border-left: 5px solid #ef4444;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    .experience-card h3 {
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .experience-card ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #d1d5db;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        gap: 1em;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">Aldo Pratama</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="kemampuan.html">Kemampuan</a></li>
+          <li><a href="pengalaman.html">Pengalaman</a></li>
+          <li><a href="sertifikat.html">Sertifikat</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content">
+    <h2 class="section-title">Pengalaman</h2>
+    <div class="experience-container">
+      <div class="experience-card">
+        <h3>Membuat Website menggunakan Linux Debian</h3>
+        <ul>
+          <li>Project kelompok membuat website berbasis Wordpress, Moodle, atau Source Code lainnya.</li>
+        </ul>
+      </div>
+
+      <div class="experience-card">
+        <h3>Membuat Website dengan HTML & CSS</h3>
+        <ul>
+          <li>Project kelompok membuat website menggunakan HTML dan CSS.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Portofolio Saya</p>
+  </footer>
+</body>
+</html>
